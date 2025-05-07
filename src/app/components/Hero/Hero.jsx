@@ -96,7 +96,6 @@ export default function Hero() {
       alt: "imagen",
     }
 
-    // Añade más public IDs de Cloudinary aquí
   ];
 
   return (
@@ -113,6 +112,8 @@ export default function Hero() {
               height={600}
               crop="fill"
               gravity="auto"
+              loading="eager"
+              priority
               className={`w-full h-full object-cover ${image.cls || ""}`}
             />
           ))}
