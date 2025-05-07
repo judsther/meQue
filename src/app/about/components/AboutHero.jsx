@@ -17,11 +17,12 @@ export default function AboutHero() {
         <CldImage
           src="cld-sample-4"
           alt="Baner Fotografía profesonal en El Salvador"
-          width={1500}
-          height={880}
+          width={1920}
+          height={1080}
           sizes="100vw"
           loading="eager"
-          priority
+          quality="auto"
+          format="auto"
           className="object-cover w-full min-h-screen lg:h-[872px]"
         />
       </div>
