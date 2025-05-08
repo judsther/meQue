@@ -51,24 +51,26 @@ export default function AboutTeam() {
           uipo
         </p>
       </div>
-      <div className="flex flex-wrap justify-around gap-y-8 md:mx-40">
+      <div className="flex flex-wrap h-full w-auto justify-around gap-y-8 gap-x-2 mx-2 md:mx-10 lg:mx-40">
         {team.map((team, i) => (
           <div
             key={i}
-            className="flex flex-col items-center  bg-zinc-900 p-4 w-auto md:w-1/3 h-auto mx-4 gap-y-4 text-white rounded-t-full rounded-b-2xl"
+            className="relative flex flex-col items-center bg-zinc-900 md:w-1/2 lg:w-1/3 text-white rounded-b-xs rounded-t-full"
           >
-            <div className="rounded-full w-full h-[400px] overflow-hidden">
+            <div className="rounded-full relative overflow-hidden m-2">
               <CldImage
                 src={team.imagen}
                 alt="profesionales agencia creativa meque"
                 height={400}
                 width={400}
-                className="object-cover object-top w-full h-full"
+                className="object-cover object-top w-[400px] h-[400px]"
               />
             </div>
-            <p className="font-black">{team.nombre}</p>
-            <p className="font-bold text-[#F1B000]">{team.rol}</p>
-            <p>{team.descripcion}</p>
+            <div className=" p-3 gap-y-3 flex flex-col">
+              <p className="font-black">{team.nombre}</p>
+              <p className="font-bold text-[#F1B000]">{team.rol}</p>
+              <p>{team.descripcion}</p>
+            </div>
           </div>
         ))}
       </div>
