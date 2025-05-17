@@ -3,7 +3,7 @@ import { CldImage } from "next-cloudinary";
 
 const productos = [
   {
-    img: "" || null,
+    img: "DSC_7614_ttepce" || null,
     title: "Fotografía",
     description:
       "Calidad profesional, trabajado por expertos con más de 8 años de experiencia en la industria local.",
@@ -52,7 +52,7 @@ export default function QuickProducts() {
               width={400}
               height={400}
               src={productos.img || "cld-sample-5"}
-              className=""
+              className=" h-[300px] w-[300px] object-cover"
             />
             <p className="font-bold uppercase my-2">{productos.title}</p>
             <p>{productos.description}</p>

@@ -2,16 +2,16 @@
 import { CldImage } from "next-cloudinary";
 
 
-export default function Fondo() {
+export default function Background() {
   return (
     <section>
       <div className="absolute bg-black/65 w-full min-h-screen z-0"></div>
       <div>
         <CldImage
-          src="cld-sample-4"
+          src="DSC_2921_rtu8tv"
           alt="Baner Fotografía profesonal en El Salvador"
-          width={1920}
-          height={1080}
+          width={1080}
+          height={720}
           sizes="100vw"
           loading="eager"
           quality="auto"

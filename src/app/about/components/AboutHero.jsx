@@ -15,7 +15,7 @@ export default function AboutHero() {
       <div className="absolute bg-black/65 w-full min-h-screen"></div>
       <div>
         <CldImage
-          src="cld-sample-4"
+          src="DSC_0995_etxhxz"
           alt="Baner Fotografía profesonal en El Salvador"
           width={1920}
           height={1080}

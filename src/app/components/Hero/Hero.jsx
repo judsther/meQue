@@ -6,96 +6,95 @@ import { CldImage } from "next-cloudinary";
 export default function Hero() {
   const images = [
     {
-      img: "cld-sample-2",
+      img: "DSC_7614_ttepce",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-4",
+      img: "OTI_5856_rvzwn4",
       cls: "slide-down-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-5",
+      img: "DSC_2921_rtu8tv",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-3",
+      img: "OTI_2154_ubjnb8",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample",
+      img: "OTI_4907_fa8jn0",
       cls: "slide-down-loop",
       alt: "imagen",
     },
     {
-      img: "samples/dessert-on-a-plate",
+      img: "OTI_5690_f8x45e",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-2",
+      img: "OTI_5753_zilqdk",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-4",
+      img: "OTI_6825_ybhmoj",
       cls: "slide-down-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-5",
+      img: "DSC_8907_onqbgf",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-3",
+      img: "DSC_2921_rtu8tv",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample",
+      img: "OTI_6825_ybhmoj",
       cls: "slide-down-loop",
       alt: "imagen",
     },
     {
-      img: "samples/dessert-on-a-plate",
+      img: "DSC_0995_etxhxz",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-2",
+      img: "DSC_7558_tby0xw",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-4",
+      img: "DSC_4885_iydpeu",
       cls: "slide-down-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-5",
+      img: "DSC_4527_b9r0du",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample-3",
+      img: "DSC_7558_tby0xw",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "cld-sample",
+      img: "DSC_4522_ny8eu3",
       cls: "slide-down-loop",
       alt: "imagen",
     },
     {
-      img: "samples/dessert-on-a-plate",
+      img: "DSC_4879_vnelqt",
       cls: "slide-up-loop",
       alt: "imagen",
-    }
-
+    },
   ];
 
   return (

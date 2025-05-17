@@ -2,7 +2,7 @@
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 import { CldImage } from "next-cloudinary";
-import Ribon from "../Ribbon/Ribon";
+import Ribon from "../Ribbon/Ribbon";
 
 export default function Section() {
   const ref1 = useRef(null);

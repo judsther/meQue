@@ -18,18 +18,18 @@ const team = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid!",
   },
   {
-    imagen: "samples/smile",
+    imagen: "eugenia-mequestudio_dfdd2r_c_crop_ar_9_16_g4ddnp",
     nombre: "Eugenia Barahona",
     rol: "Diseñadora Gráfica - Productora Audiovisual",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid!",
+      "Soy Diseñadora gráfica, con especialidad en E-Marketing, actualmente estoy trabajando en Shelter Helps, soy parte del Departamento de Comunicaciones como Especialista en Producción audiovisual, por 5 años.   Además trabajo como Productora Audiovisual Freelance, desde hace 3 años, con mi propia marca Productora de Shortfilm, y Wedding Videos.",
   },
   {
-    imagen: "samples/two-ladies",
+    imagen: "pict250130_0258330000_ksx2wk",
     nombre: "Judith Arévalo",
     rol: "Desarrolladora Web",
     descripcion:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, aliquid!",
+      "Soy desarrolladora web y me encanta crear sitios que no solo se vean bien, sino que también funcionen súper bien. He trabajado en landing pages, webs empresariales y apps usando herramientas modernas como JavaScript, TypeScript, PHP y tecnologías como Vite y Next.js con React. Disfruto encontrar el balance entre diseño y funcionalidad para que cada proyecto tenga su propia personalidad.",
   },
 ];
 

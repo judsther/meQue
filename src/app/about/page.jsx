@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar/Navbar";
 import AboutHero from "./components/AboutHero";
 import AboutSection from "./components/AboutSection";
 import AboutTeam from "./components/AboutTeam";
+import AboutWorks from "./components/AboutWorks";
 
 
 export default function About() {
@@ -11,6 +12,7 @@ export default function About() {
       <Navbar />
       <AboutHero />
       <AboutSection />
+      <AboutWorks/>
       <AboutTeam/>
       <Footer />
     </div>
