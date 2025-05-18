@@ -37,19 +37,19 @@ export default function AboutWorks() {
         {
           img: "DSC_4879_vnelqt",
           alt: "fotografia profesional meque estudio creativo",
-          cls: `ml-6 ${animation1} animate__faster`,
+          cls: `md:ml-6 ${animation1} animate__faster`,
           ref: ref1,
         },
         {
           img: "OTI_5856_rvzwn4",
           alt: "fotografia profesional meque estudio creativo",
-          cls: `ml-58 ${animation1} animate__fast`,
+          cls: `md:ml-58 ${animation1} animate__fast`,
           ref: ref1,
         },
         {
           img: "OTI_5690_f8x45e",
           alt: "fotografia profesional meque estudio creativo",
-          cls: `ml-24 ${animation1} animate__slow`,
+          cls: `md:ml-24 ${animation1} animate__slow`,
           ref: ref1,
         },
       ],
@@ -64,19 +64,19 @@ export default function AboutWorks() {
         {
           img: "menu_l3tdha",
           alt: "diseño grafico estudio creativo",
-          cls: `ml-6 ${animation2} animate__faster`,
+          cls: `md:ml-6 ${animation2} animate__faster`,
           ref: ref2,
         },
         {
           img: "dona_kd2l3g",
           alt: "diseño grafico estudio creativo",
-          cls: `ml-58 ${animation2} animate__fast`,
+          cls: `md:ml-58 ${animation2} animate__fast`,
           ref: ref2,
         },
         {
           img: "burritos_lpdaqe",
           alt: "diseño grafico estudio creativo",
-          cls: `ml-24 ${animation2} animate__slow`,
+          cls: `md:ml-24 ${animation2} animate__slow`,
           ref: ref2,
         },
       ],
@@ -92,19 +92,19 @@ export default function AboutWorks() {
         {
           img: "mtgymchat_xavulb",
           alt: "",
-          cls: `ml-6 ${animation3} animate__faster`,
+          cls: `md:ml-6 ${animation3} animate__faster`,
           ref: ref3,
         },
         {
           img: "edgeline_hmah0r",
           alt: "",
-          cls: `ml-58 ${animation3} animate__fast`,
+          cls: `md:ml-58 ${animation3} animate__fast`,
           ref: ref3,
         },
         {
           img: "church_vrzhxf",
           alt: "",
-          cls: `ml-24 ${animation3} animate__slow`,
+          cls: `md:ml-24 ${animation3} animate__slow`,
           ref: ref3,
         },
       ],
@@ -117,26 +117,33 @@ export default function AboutWorks() {
         {Object.entries(trabajos).map(([categoria, contenido]) => (
           <section
             key={categoria}
-            className={`flex md:px-40 justify-center items-center py-18 ${
+            className={`flex md:px-40 px-3 justify-center items-center py-18 ${
               contenido.categoria === "Diseño Gráfico"
-                ? "flex-row-reverse"
-                : "flex-row bg-neutral-100"
+                ? "flex-col md:flex-row-reverse"
+                : "flex-col md:flex-row bg-neutral-100"
             }`}
           >
-            <p className="w-1/2 flex flex-col">
-              <span className="mb-6 font-bold text-2xl">{contenido.categoria}</span>
+            <p className="md:w-1/2 flex flex-col mb-6 md:mb-0">
+              <span className="mb-6 font-bold text-2xl">
+                {contenido.categoria}
+              </span>
               {contenido.description}
             </p>
-            <div className="m-5 flex flex-col ">
+            <div className="md:m-5 flex flex-col ">
               {contenido.imagenes.map((imagen, i) => (
-                <div key={i} className=" h-full w-full -my-14 rounded-sm">
+                <div
+                  key={i}
+                  className="h-full w-full md:-my-14 md:m-0 m-2 rounded-sm"
+                >
                   <CldImage
                     ref={imagen.ref}
                     alt={imagen.alt}
                     width={400}
                     height={400}
+                    quality="auto"
+                    format="auto"
                     src={imagen.img || "cld-sample-5"}
-                    className={`h-[300px] w-[300px] rounded-sm object-cover ml-6 ${imagen.cls}`}
+                    className={`md:h-[300px] md:w-[300px] h-62 w-62 rounded-sm object-cover md:ml-6 ${imagen.cls}`}
                   />
                 </div>
               ))}

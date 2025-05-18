@@ -38,16 +38,7 @@ export default function AboutTeam() {
     <section className="w-full min-h-screen flex flex-col justify-center items-center mb-26">
       <div className="h-full w-full flex flex-row items-center justify-center">
         <p className="flex flex-row text-center text-5xl md:text-6xl font-bold text-zinc-900 my-12">
-          Nuestro e
-          <span className="-me-5 -ms-1 md:mt-4 mt-2">
-            <CldImage
-              src="q-4_rbaobb"
-              alt="q logo"
-              height={55}
-              width={55}
-              className="w-auto h-auto "
-            />
-          </span>
+          Nuestro e<span className="text-[#F1B000]">q</span>
           uipo
         </p>
       </div>
@@ -55,14 +46,16 @@ export default function AboutTeam() {
         {team.map((team, i) => (
           <div
             key={i}
-            className="relative flex flex-col items-center bg-zinc-900 md:w-1/2 lg:w-1/3 text-white rounded-b-xs rounded-t-full"
+            className="relative flex flex-col items-center bg-zinc-900 md:w-1/2 lg:w-1/3 w-84 text-white rounded-b-xs rounded-t-full"
           >
-            <div className="rounded-full relative overflow-hidden m-2">
+            <div className="rounded-full relative md:h-auto h-82 overflow-hidden m-2">
               <CldImage
                 src={team.imagen}
                 alt="profesionales agencia creativa meque"
                 height={400}
                 width={400}
+                quality="auto"
+                format="auto"
                 className="object-cover object-top w-[400px] h-[400px]"
               />
             </div>

@@ -28,6 +28,8 @@ export default function Section() {
             src="Mask_group-6_n5tmrf"
             width={200}
             height={200}
+            quality="auto"
+            format="auto"
             crop="fill"
           />
         </div>

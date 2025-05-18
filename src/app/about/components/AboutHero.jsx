@@ -23,6 +23,7 @@ export default function AboutHero() {
           loading="eager"
           quality="auto"
           format="auto"
+          priority
           className="object-cover w-full min-h-screen lg:h-[872px]"
         />
       </div>

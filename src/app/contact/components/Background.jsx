@@ -5,7 +5,7 @@ import { CldImage } from "next-cloudinary";
 export default function Background() {
   return (
     <section>
-      <div className="absolute bg-black/65 w-full min-h-screen z-0"></div>
+      <div className="absolute bg-black/65 w-full md:min-h-screen h-[800px] z-0"></div>
       <div>
         <CldImage
           src="DSC_2921_rtu8tv"
@@ -16,7 +16,7 @@ export default function Background() {
           loading="eager"
           quality="auto"
           format="auto"
-          className="object-cover w-full min-h-screen lg:h-[872px]"
+          className="object-cover w-full h-[800px] lg:h-[872px]"
         />
       </div>
     </section>
