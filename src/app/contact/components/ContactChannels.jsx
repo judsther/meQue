@@ -3,6 +3,23 @@ import { FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import Background from "./Background";
 
 export default function ContactChannels() {
+  function enviarFormulario(e) {
+    e.preventDefault(); 
+    const form = e.target;
+ 
+    fetch(form.action, {
+      method: form.method,
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then(() => {
+        alert("¡Enviado con éxito!");
+        form.reset();
+      })
+      .catch(() => alert("Ocurrió un error. Intenta de nuevo."));
+  }
   return (
     <section className="md:min-h-screen h-auto w-full ">
       <div className="flex lg:flex-row-reverse flex-col-reverse md:mt-0 mt-26 md:mb-0 mb-4 md:gap-24 gap-8 justify-center items-center w-full h-full z-10 absolute rounded-xs">
@@ -12,8 +29,9 @@ export default function ContactChannels() {
           </p>
           <form
             method="POST"
+            onSubmit={enviarFormulario}
             encType="text/plain"
-            action="mailto:j.arevaloguardado@gmail.com"
+            action="https://formsubmit.co/j.arevaloguardado@gmail.com"
             className="bg-[#F1B000] p-4 flex flex-col w-full h-full gap-3 pt-12 rounded-xs border-2 border-zinc-100 shadow-gray-950 shadow-md"
           >
             <input
@@ -43,7 +61,10 @@ export default function ContactChannels() {
               className="bg-white h-22"
               required
             ></textarea>
-            <button className="bg-amber-100 " type="submit">
+            <button
+              className="bg-amber-100 mx-10 outline-2 outline-zinc-600"
+              type="submit"
+            >
               enviar
             </button>
           </form>
@@ -56,21 +77,21 @@ export default function ContactChannels() {
           <div className="flex flex-col gap-4 text-zinc-100 bg-zinc-900 py-22 px-10 pe-28 rounded-xs h-full border-2 border-zinc-100 shadow-gray-950 shadow-md">
             <a
               className="flex items-center gap-2 hover:text-[#F1B000] "
-              href="https://facebook.com"
+              href="https://www.facebook.com/profile.php?id=61565638682851"
               target="_blank"
             >
               <FaFacebook className="text-2xl" /> <p>Facebook</p>
             </a>
             <a
               className="flex items-center gap-2 hover:text-[#F1B000]"
-              href="https://instagram.com"
+              href="https://www.instagram.com/meque.studio/"
               target="_blank"
             >
               <FaInstagram className="text-2xl" /> <p>Instagram</p>
             </a>
             <a
               className="flex items-center gap-2 hover:text-[#F1B000]"
-              href="https://linkedin.com"
+              href="https://wa.me/50360162394"
               target="_blank"
             >
               <FaWhatsapp className="text-2xl" /> <p>WhastApp</p>
