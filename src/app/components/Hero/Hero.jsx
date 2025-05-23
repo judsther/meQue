@@ -76,12 +76,12 @@ export default function Hero() {
       alt: "imagen",
     },
     {
-      img: "DSC_4527_b9r0du",
+      img: "OTI_4907_fa8jn0",
       cls: "slide-up-loop",
       alt: "imagen",
     },
     {
-      img: "DSC_7558_tby0xw",
+      img: "DSC_4527_b9r0du",
       cls: "slide-up-loop",
       alt: "imagen",
     },
@@ -98,7 +98,7 @@ export default function Hero() {
   ];
 
   return (
-    <section className="relative w-full h-[800px] md:h-screen">
+    <section className="relative w-full h-[700px] md:h-screen">
       <div className="absolute inset-0 overflow-hidden z-0 ">
         {/* Grid de imágenes */}
         <div className="grid grid-cols-3 grid-rows-4 gap-2">
