@@ -15,7 +15,7 @@
 - **Framer-motion**
 - **Lucide-react**
 - **FormSubmit** (para el envío del formulario de contacto)
--**Cloudinary** (Para la entrega optimizada de imágenes)
+- **Cloudinary** (Para la entrega optimizada de imágenes)
 - **Vercel** (Hosting y despliegue)
 
 ---
@@ -24,7 +24,7 @@
 
 - `src/app`: Páginas principales estructuradas por rutas
 - `src/components`: Componentes reutilizables como Navbar, Footer, ContactForm, etc.
-- `public`: Archivos estáticos e imágenes del sitio
+- `public`: Favicons
 
 ---
 
